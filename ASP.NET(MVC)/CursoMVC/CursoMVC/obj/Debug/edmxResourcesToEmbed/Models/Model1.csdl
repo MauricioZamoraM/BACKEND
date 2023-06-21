@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cursomvcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="cursomvcEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cstate" EntityType="cursomvcModel.cstate" />
+    <EntitySet Name="usuarios" EntityType="cursomvcModel.usuarios" />
+    <AssociationSet Name="FK_Usuarios_Estados" Association="cursomvcModel.FK_Usuarios_Estados">
+      <End Role="cstate" EntitySet="cstate" />
+      <End Role="usuarios" EntitySet="usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="cstate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="usuarios" Relationship="cursomvcModel.FK_Usuarios_Estados" FromRole="cstate" ToRole="usuarios" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="idState" Type="Int32" />
+    <NavigationProperty Name="cstate" Relationship="cursomvcModel.FK_Usuarios_Estados" FromRole="usuarios" ToRole="cstate" />
+  </EntityType>
+  <Association Name="FK_Usuarios_Estados">
+    <End Type="cursomvcModel.cstate" Role="cstate" Multiplicity="0..1" />
+    <End Type="cursomvcModel.usuarios" Role="usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cstate">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="usuarios">
+        <PropertyRef Name="idState" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

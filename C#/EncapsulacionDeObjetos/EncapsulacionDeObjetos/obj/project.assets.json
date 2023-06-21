@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\C#\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos.csproj",
+      "projectUniqueName": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\BACKEND\\C#\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos.csproj",
       "projectName": "EncapsulacionDeObjetos",
-      "projectPath": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\C#\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos.csproj",
+      "projectPath": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\BACKEND\\C#\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos.csproj",
       "packagesPath": "C:\\Users\\rmzamoram\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\C#\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos\\obj\\",
+      "outputPath": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\BACKEND\\C#\\EncapsulacionDeObjetos\\EncapsulacionDeObjetos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

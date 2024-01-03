@@ -27,5 +27,7 @@ namespace CursoMVC.Models
     
         public virtual DbSet<cstate> cstate { get; set; }
         public virtual DbSet<usuarios> usuarios { get; set; }
+        public virtual DbSet<animal_class> animal_class { get; set; }
+        public virtual DbSet<animals> animals { get; set; }
     }
 }

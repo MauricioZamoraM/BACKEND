@@ -23,6 +23,10 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Usuarios", "Index", "User")</li>
+                    @*"Animales": Este es el texto que se mostrará en el enlace. En este caso, el texto será "Animales"*@
+                    @*"Index": Este es el nombre del método de acción en el controlador que se invocará cuando se haga clic en el enlace. En este caso, se está especificando el método de acción "Index" en el controlador.*@
+                    @*"Animal": Este es el nombre del controlador al que se enviará la solicitud cuando se haga clic en el enlace. En este caso, se está especificando el controlador "Animal".*@
+                    <li>@Html.ActionLink("Animales", "Index", "Animal")</li>
                     <li>@Html.ActionLink("Cerrar sesión", "Logout", "Close")</li>
 
                 </ul>

@@ -19,5 +19,22 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="animal_class">
+      <EntityTypeMapping TypeName="cursomvcModel.animal_class">
+        <MappingFragment StoreEntitySet="animal_class">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="animals">
+      <EntityTypeMapping TypeName="cursomvcModel.animals">
+        <MappingFragment StoreEntitySet="animals">
+          <ScalarProperty Name="idAnimalClass" ColumnName="idAnimalClass" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

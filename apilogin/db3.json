@@ -1,0 +1,508 @@
+{
+  "data": [
+    {
+      "CAMP_ID": 1,
+      "CAMP_NOMBRE": "TipoIdentificacion",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Parámetro de tipo de identificación",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 7,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {
+          "CAMP_ID": 1,
+          "CAMPD_NOMBRE": "1",
+          "CAMPD_VALOR": "Nacional",
+          "CAMPD_ACTIVO": true
+        },
+        {
+          "CAMP_ID": 1,
+          "CAMPD_NOMBRE": "2",
+          "CAMPD_VALOR": "Extranjero",
+          "CAMPD_ACTIVO": true
+        },
+        {
+          "CAMP_ID": 1,
+          "CAMPD_NOMBRE": "3",
+          "CAMPD_VALOR": "DIMEX",
+          "CAMPD_ACTIVO": true
+        }
+      ]
+    },
+    {
+      "CAMP_ID": 3,
+      "CAMP_NOMBRE": "Identificacion",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Parámetro de identificación",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 4,
+      "CAMP_NOMBRE": "MontoSolicitado",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Parámetro del monto solicitado",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 5,
+      "CAMP_NOMBRE": "Nuevo",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "                  prueba",
+      "CAMP_DEFAULT": "0",
+      "CAMP_VALIDACION": "1234567",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": false,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 6,
+      "CAMP_NOMBRE": "Nuevo 2",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "prueba",
+      "CAMP_DEFAULT": "0",
+      "CAMP_VALIDACION": "12345",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": false,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 7,
+      "CAMP_NOMBRE": "Nuevo3",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "Parametro nuevo 3",
+      "CAMP_DEFAULT": "def",
+      "CAMP_VALIDACION": "requerido",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 8,
+      "CAMP_NOMBRE": "IdSolicitud",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "Id de la solicitud",
+      "CAMP_DEFAULT": "",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 9,
+      "CAMP_NOMBRE": "rre",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "                  ere",
+      "CAMP_DEFAULT": "",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 10,
+      "CAMP_NOMBRE": "rre",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "                  ere",
+      "CAMP_DEFAULT": "",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 11,
+      "CAMP_NOMBRE": "vdfsd",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "                  ",
+      "CAMP_DEFAULT": "",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 12,
+      "CAMP_NOMBRE": "rfg",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "            dg      ",
+      "CAMP_DEFAULT": "r",
+      "CAMP_VALIDACION": "wr",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 13,
+      "CAMP_NOMBRE": "rgds",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "                  sfsd",
+      "CAMP_DEFAULT": "e",
+      "CAMP_VALIDACION": "ere",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 14,
+      "CAMP_NOMBRE": "IdmSolicitud",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "IdmSolicitud",
+      "CAMP_DEFAULT": "",
+      "CAMP_VALIDACION": "Requerido",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 19,
+      "CAMP_NOMBRE": "IdConfiguracionProceso",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "IdConfiguracionProceso",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 20,
+      "CAMP_NOMBRE": "AplicacionOrigen",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "AplicacionOrigen",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 21,
+      "CAMP_NOMBRE": "Usuario",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Usuario",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 22,
+      "CAMP_NOMBRE": "Parametros",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Parametros",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 11,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 23,
+      "CAMP_NOMBRE": "Nombre",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Nombre",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 24,
+      "CAMP_NOMBRE": "Valor",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Valor",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 25,
+      "CAMP_NOMBRE": "usuario",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Usuario para la autenticación",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 26,
+      "CAMP_NOMBRE": "clave",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Clave para la autenticación",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 27,
+      "CAMP_NOMBRE": "sistema",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Campo del sistema para la autenticación",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 28,
+      "CAMP_NOMBRE": "active_directory",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Campo para la autenticación para active_directory",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 9,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 30,
+      "CAMP_NOMBRE": "token",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Campo del sistema para la respuesta token",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 31,
+      "CAMP_NOMBRE": "",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "                  ",
+      "CAMP_DEFAULT": "",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 32,
+      "CAMP_NOMBRE": "Campo01",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "Campo uno descripcion",
+      "CAMP_DEFAULT": "valor_default",
+      "CAMP_VALIDACION": "valor_validacion",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 33,
+      "CAMP_NOMBRE": "Campo02",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "Campo dos descripcion",
+      "CAMP_DEFAULT": "valor_default_2",
+      "CAMP_VALIDACION": "valor_validacion_2",
+      "TIP_CAMP_ID": 11,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 34,
+      "CAMP_NOMBRE": "parametro_nombre_01",
+      "CAMP_REQUERIDO": false,
+      "CAMP_DESCRIPCION": "parametro_descripcion",
+      "CAMP_DEFAULT": "parametro_defaul",
+      "CAMP_VALIDACION": "@\" ^((\\+?(61\\W?4))|(04))\\W?(([0-9]{2}\\W[0-9]{3}\\W[0-9]{3})|([0-9]{8})|([0-9]{4}\\W[0-9]{4})|([0-9]{2}\\W[0-9]{6}))$",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 36,
+      "CAMP_NOMBRE": "cedula",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "cedula",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 37,
+      "CAMP_NOMBRE": "idSolicitud",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "idSolicitud",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 38,
+      "CAMP_NOMBRE": "reglaSalario",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "reglaSalario",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 39,
+      "CAMP_NOMBRE": "NombreClienteMotorDecision",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "NombreClienteMotorDecision",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 40,
+      "CAMP_NOMBRE": "MontoSolicitar",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "MontoSolicitar",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 41,
+      "CAMP_NOMBRE": "numeroAsegurado",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "numeroAsegurado",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 42,
+      "CAMP_NOMBRE": "tipoProceso",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "tipoProceso",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 43,
+      "CAMP_NOMBRE": "tipoIdentificacion",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "tipoIdentificacion",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 45,
+      "CAMP_NOMBRE": "tran_id",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "tran_id",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 6,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 46,
+      "CAMP_NOMBRE": "MontoSolicitado3",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Parámetro del monto solicitado",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": false,
+      "detalles": [
+        {}
+      ]
+    },
+    {
+      "CAMP_ID": 47,
+      "CAMP_NOMBRE": "MontoSolicitado3",
+      "CAMP_REQUERIDO": true,
+      "CAMP_DESCRIPCION": "Parámetro del monto solicitado",
+      "CAMP_VALIDACION": "",
+      "TIP_CAMP_ID": 4,
+      "CAMP_ACTIVO": true,
+      "detalles": [
+        {
+          "CAMP_ID": 47,
+          "CAMPD_NOMBRE": "TestValor",
+          "CAMPD_VALOR": "Test",
+          "CAMPD_ACTIVO": true
+        }
+      ]
+    }
+  ]
+}

@@ -947,11 +947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rmzamoram\\Desktop\\API_CRUD\\API_CRUD\\API_CRUD\\API_CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\BACKEND\\ASP. NET CORE API\\API_CRUD\\API_CRUD\\API_CRUD.csproj",
       "projectName": "API_CRUD",
-      "projectPath": "C:\\Users\\rmzamoram\\Desktop\\API_CRUD\\API_CRUD\\API_CRUD\\API_CRUD.csproj",
+      "projectPath": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\BACKEND\\ASP. NET CORE API\\API_CRUD\\API_CRUD\\API_CRUD.csproj",
       "packagesPath": "C:\\Users\\rmzamoram\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rmzamoram\\Desktop\\API_CRUD\\API_CRUD\\API_CRUD\\obj\\",
+      "outputPath": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\BACKEND\\ASP. NET CORE API\\API_CRUD\\API_CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,6 +1,6 @@
 ﻿using API_CRUD.Models.ListarPagos;
 using API_CRUD.Data;
-namespace API_CRUD.Logic.ListarPagosAplicados
+namespace API_CRUD.Logic.PagosAplicados
 {
     public class ListarPagosAplicados
     {
@@ -9,11 +9,11 @@ namespace API_CRUD.Logic.ListarPagosAplicados
 
         public async Task<object> ListarPagosAplicadosRespuesta()
         {
-            ModelListarPagosAplicadosRespuesta respuesta = new ModelListarPagosAplicadosRespuesta();
+            ListarPagosRespuesta respuesta = new ListarPagosRespuesta();
 
             try
             {
-                respuesta = await new ListarPagosAplicados().ObtenerPagosAplicadosRespuesta();
+                respuesta = await new ListarPagosAplicados().ListaPagosAplicados();
 
             }
             catch (Exception ex)
@@ -31,9 +31,9 @@ namespace API_CRUD.Logic.ListarPagosAplicados
             return respuesta;
         }
 
-        public async Task<ModelListarPagosAplicadosRespuesta> ObtenerPagosAplicadosRespuesta()
+        public async Task<ListarPagosRespuesta> ListaPagosAplicados()
           {
-              ModelListarPagosAplicadosRespuesta  _getResponse = _dbConnector.ObtenerPagosAplicados();
+            ListarPagosRespuesta _getResponse = _dbConnector.ListarPagos();
               return _getResponse;
           }
 

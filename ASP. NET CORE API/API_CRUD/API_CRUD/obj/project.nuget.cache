@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zm5rp2WiUP2dnewkmt/Y0Rt4yDbQFqbq4LEAp3gBEUoDZPA0LXkALu8bzFITQyL1lJuRrtYXSf8+Fu8zxIv66Q==",
+  "dgSpecHash": "efGcIjJHqlLyU6iBWAryY4sOWv8vM1t/VlLfeH8UHBD2Czc/fV3NZITGnnUnVs2o5rlM3nAWr4u+m/tx2FRn7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rmzamoram\\Desktop\\API_CRUD\\API_CRUD\\API_CRUD\\API_CRUD.csproj",
+  "projectFilePath": "C:\\Users\\rmzamoram\\Documents\\Información Importante\\PRACTICA\\BACKEND\\ASP. NET CORE API\\API_CRUD\\API_CRUD\\API_CRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rmzamoram\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\rmzamoram\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

@@ -16,6 +16,7 @@ namespace API_CRUD.Logic.PagosAplicados
                 respuesta = await new ListarPagosAplicados().ListaPagosAplicados();
 
             }
+
             catch (Exception ex)
             {
                 var objResponse = new

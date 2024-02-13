@@ -2,6 +2,7 @@
 using API_CRUD.Models.PagosAplicados;
 using System.Data.SqlClient;
 using API_CRUD.Models.ListarPagos;
+using API_CRUD.Models.TipoSolicitud;
 
 namespace API_CRUD.Data
 {
@@ -56,7 +57,6 @@ namespace API_CRUD.Data
             }
         }
 
-
         public ObtenerPagoRespuesta ObtenerPago(ObtenerPagoRequest request)
         {
             ObtenerPagoRespuesta results = new ObtenerPagoRespuesta();
@@ -99,89 +99,120 @@ namespace API_CRUD.Data
             }
         }
 
-        //public ModelAplicarPagosEnvioPagosOfflineRespuestaDavivienda AplicarPagosEnvioPagosOffline(Credito CreditoActivo, ModelAplicarPagosDavivienda resConsulta, DatosConfiguracionRecaudadora datosConfiguracion, string estado, string TipoNumeroDoc)
-        //{
-        //    PoolTransaccion transaccion = new PoolTransaccion();
-        //    ModelAplicarPagosEnvioPagosOfflineRespuestaDavivienda response = new ModelAplicarPagosEnvioPagosOfflineRespuestaDavivienda();
+        public ListarSolicitudResponse ListarSolicitud()
+        {
+            ListarSolicitudResponse results = new ListarSolicitudResponse();
+            string connectionString = Utils.Get_Connection_String(ActiveEnvironment());
 
-        //    try
-        //    {
-        //        string connectionString = Utils.Desencrypt(Utils.Get_Connection_String(ActiveEnvironment()));
-        //        using (SqlConnection connection = new SqlConnection(connectionString))
-        //        {
-        //            connection.Open();
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string sqlcommand = "EXEC SP_OBTENER_TIPO_SOLICITUD_LISTAR";
 
-        //            string insertQuery = "EXECUTE [dbo].[DaviviendaInsertarInformacionPagosOff] @codReferencia,@tra_id_factura,@tra_nit,@tra_cuenta, @tra_tipo_doc ,@tra_numero_doc ,@tra_estado ,@tra_fecha_pago ,@tra_contrato ,@tra_agencia ,@tra_enviado ,@tra_periodo ,@tra_id ,@tra_centro ,@tra_codigo_dispersion ,@tra_vencimiento ,@tra_nombre ,@tra_valor ,@tra_cliente ,@tra_banco ,@tra_consecutivo_consulta ,@tra_valor_cuota ,@tra_valor_vencido ,@tra_estado_reversion ,@tra_id_pago ,@estado";
-        //            using (SqlCommand command = new SqlCommand(insertQuery, connection))
-        //            {
+                    using (SqlCommand command = new SqlCommand(sqlcommand, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var respuesta = new ListarSolicitud
+                                {
+                                    tso_id = (int)reader["tso_id"],
+                                    tso_nombre = (string)reader["tso_nombre"],
+                                    tso_estado = Convert.ToInt32(reader["tso_estado"])
+                                };
 
-        //                if (CreditoActivo._mensajeRespuesta == "El cliente tiene 1 credito" || (CreditoActivo._tipo_doc + CreditoActivo._numero_doc) == TipoNumeroDoc)
-        //                {
-        //                    // Establecer parametros para desserializar 
-        //                    command.Parameters.AddWithValue("@codReferencia", resConsulta.CodReferencia);
-        //                    command.Parameters.AddWithValue("@tra_id_factura", Convert.ToDecimal(resConsulta.CodReferenciaBanco));
-        //                    command.Parameters.AddWithValue("@tra_nit", Convert.ToDecimal(CreditoActivo._nit)); //tranit es decimal en informa _nit es string
-        //                    command.Parameters.AddWithValue("@tra_cuenta", CreditoActivo._cuenta);//lenght 12
-        //                    command.Parameters.AddWithValue("@tra_tipo_doc", CreditoActivo._tipo_doc);
-        //                    command.Parameters.AddWithValue("@tra_numero_doc", Convert.ToInt32(CreditoActivo._numero_doc));
-        //                    command.Parameters.AddWithValue("@tra_estado", datosConfiguracion.tra_estado); //Por defecto A
-        //                    command.Parameters.AddWithValue("@tra_fecha_pago", resConsulta.Fecha);
-        //                    command.Parameters.AddWithValue("@tra_contrato", datosConfiguracion.tra_contrato);//Datos de recuadadora 
-        //                    command.Parameters.AddWithValue("@tra_agencia", datosConfiguracion.tra_agencia);//Datos de recuadadora 
-        //                    command.Parameters.AddWithValue("@tra_enviado", Convert.ToString(datosConfiguracion.tra_enviado));//Debe ser cero
-        //                    command.Parameters.AddWithValue("@tra_periodo", resConsulta.Fecha);
-        //                    command.Parameters.AddWithValue("@tra_id", datosConfiguracion.tra_id);//Numero de intentos de transaccion
-        //                    command.Parameters.AddWithValue("@tra_centro", CreditoActivo._centro);
-        //                    command.Parameters.AddWithValue("@tra_codigo_dispersion", datosConfiguracion.tra_codigo_dispersion);//Debe ser 1 por defecto
-        //                    command.Parameters.AddWithValue("@tra_vencimiento", CreditoActivo._fech_venci);
-        //                    command.Parameters.AddWithValue("@tra_nombre", CreditoActivo._nombre);
-        //                    command.Parameters.AddWithValue("@tra_valor", resConsulta.Monto);
-        //                    command.Parameters.AddWithValue("@tra_cliente", datosConfiguracion.tra_cliente);//Datos de recuadadora 
-        //                    command.Parameters.AddWithValue("@tra_banco", datosConfiguracion.tra_banco);//Datos de recuadadora 
-        //                    command.Parameters.AddWithValue("@tra_consecutivo_consulta", transaccion.tra_consecutivo_consulta ?? (object)DBNull.Value);
-        //                    command.Parameters.AddWithValue("@tra_valor_cuota", CreditoActivo._valcuota);
-        //                    command.Parameters.AddWithValue("@tra_valor_vencido", CreditoActivo._valorvencido);
-        //                    command.Parameters.AddWithValue("@tra_estado_reversion", transaccion.tra_estado_reversion ?? (object)DBNull.Value);
-        //                    command.Parameters.AddWithValue("@tra_id_pago", transaccion.tra_id_pago/*Convert.ToInt64(resConsulta.CodReferenciaBanco)*/);
-        //                    command.Parameters.AddWithValue("@estado", estado ?? (object)DBNull.Value);
+                                results.listTipoSolicitud.Add(respuesta);
+                                results.respuesta_tipo = "success";
 
+                            }
+                        }
+                    }
+                }
 
-        //                }
+                return results;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
-        //                //int rowsAffected = 
-        //                command.ExecuteNonQuery();
-        //                response.success = true;
-        //                response.mensaje = "Agregado";
-        //                /* if (rowsAffected == -1)
-        //                {
-        //                    return new ModelAplicarPagosEnvioPagosOfflineRespuestaDavivienda
-        //                    {
-        //                        success = true,
-        //                        Mensaje = "Se insertó el registro de forma exitosa",
-        //                    };
-        //                }
-        //                else
-        //                {
-        //                    return new ModelAplicarPagosEnvioPagosOfflineRespuestaDavivienda
-        //                    {
-        //                        success = true,
-        //                        Mensaje = "No se insertó el registro",
-        //                    };
-        //                }*/
-        //            }
-        //        }
+        public ObtenerSolicitudResponse ObtenerSolicitud(string tiposolicitud_id)
+        {
+            ObtenerSolicitudResponse results = new ObtenerSolicitudResponse();
+            string connectionString = Utils.Get_Connection_String(ActiveEnvironment());
 
-        //    }
-        //    catch (Exception ex)
-        //    {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string sqlcommand = "EXEC SP_OBTENER_TIPO_SOLICITUD @id";
 
-        //        response.success = false;
-        //        response.mensaje = "Error en la inserción: " + ex.Message;
+                    using (SqlCommand command = new SqlCommand(sqlcommand, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", Convert.ToInt32(tiposolicitud_id));
 
-        //    }
-        //    return response;
-        //}
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var respuesta = new ObtenerSolicitud
+                                {
+                                    tso_id = (int)reader["tso_id"],
+                                    tso_nombre = (string)reader["tso_nombre"],
+                                    tso_estado = Convert.ToInt32(reader["tso_estado"])
 
+                                };
 
+                                results.listTipoSolicitud.Add(respuesta);
+                                results.respuesta_tipo = "success";
+                            }
+                        }
+                    }
+                }
+
+                return results;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        public AgregarSolicitudResponse AgregarSolicitud(AgregarSolicitudRequest request)
+        {
+            AgregarSolicitudResponse results = new AgregarSolicitudResponse();
+            string connectionString = Utils.Get_Connection_String(ActiveEnvironment());
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string sqlcommand = "EXEC SP_AGREGAR_TIPO_SOLICITUD @tso_nombre, @tso_estado";
+
+                    using (SqlCommand command = new SqlCommand(sqlcommand, connection))
+                    {
+                        command.Parameters.AddWithValue("@tso_nombre", request.tso_nombre);
+                        command.Parameters.AddWithValue("@tso_estado", Convert.ToInt32(request.tso_estado));
+                        command.ExecuteNonQuery();
+                        results.respuesta_tipo = "success";
+                        results.mensaje = "agregado";
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                results.respuesta_tipo = "failed";
+                results.mensaje = "Error en la inserción: " + ex.Message;
+                throw;
+            }
+            return results;
+        }
     }
 }

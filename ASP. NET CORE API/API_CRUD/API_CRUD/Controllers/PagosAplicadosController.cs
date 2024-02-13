@@ -1,5 +1,8 @@
 using API_CRUD.Logic.PagosAplicados;
 using API_CRUD.Models.PagosAplicados;
+using API_CRUD.Logic.ObtenerSolicitud;
+using API_CRUD.Models.TipoSolicitud;
+using API_CRUD.Logic.TipoSolicitud;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -21,6 +24,5 @@ namespace API_CRUD.Controllers
         {
             return await new ObtenerPagoAplicado().ObtenerPagoAplicadoRespuesta(request);
         }
-
     }
 }

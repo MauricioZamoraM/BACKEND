@@ -1,17 +1,17 @@
 ﻿namespace API_CRUD.Models.TipoSolicitud
 {
-    public class AgregarSolicitudResponse
+    public class ActualizarSolicitudResponse
     {
         public string respuesta_tipo { get; set; }
         public string mensaje { get; set; }
-        public List<ListaSolicitudesAgregar> solicitudes { get; set; }
-        public AgregarSolicitudResponse()
+        public List<ListaSolicitudesActualizar> solicitudes { get; set; }
+        public ActualizarSolicitudResponse()
         {
-            solicitudes = new List<ListaSolicitudesAgregar>();
+            solicitudes = new List<ListaSolicitudesActualizar>();
         }
     }
 
-    public class ListaSolicitudesAgregar
+    public class ListaSolicitudesActualizar
     {
         public int tso_id { get; set; }
         public string tso_nombre { get; set; }

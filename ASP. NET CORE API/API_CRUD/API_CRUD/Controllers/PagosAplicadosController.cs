@@ -12,14 +12,14 @@ namespace API_CRUD.Controllers
     public class ListarPagosController : ControllerBase
     {
         [HttpGet]
-        [Route("api/listarPagos")]
+        [Route("api/ListarPagos")]
         public async Task<object> ListarPagos()
         {
             return await new ListarPagosAplicados().ListarPagosAplicadosRespuesta();
         }
 
         [HttpPost]
-        [Route("api/obtenerPago")]
+        [Route("api/ObtenerPago")]
         public async Task<object> ObtenerPago([FromBody] ObtenerPagoRequest request)
         {
             return await new ObtenerPagoAplicado().ObtenerPagoAplicadoRespuesta(request);

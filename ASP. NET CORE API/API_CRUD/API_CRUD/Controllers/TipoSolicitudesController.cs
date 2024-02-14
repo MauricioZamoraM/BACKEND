@@ -10,24 +10,38 @@ namespace API_CRUD.Controllers
     public class TipoSolicitudesController : Controller
     {
         [HttpGet]
-        [Route("api/listarTipoSolicitud")]
+        [Route("api/ListarTipoSolicitud")]
         public async Task<object> ListarSolicitud()
         {
             return await new ListarTipoSolicitud().ListarTipoSolicitudRespuesta();
         }
 
         [HttpPost]
-        [Route("api/obtenerTipoSolicitud/{tiposolicitud_id}")]
+        [Route("api/ObtenerTipoSolicitud/{tiposolicitud_id}")]
         public async Task<object> ObtenerSolicitud(string tiposolicitud_id)
         {
             return await new ObtenerTipoSolicitud().ObtenerTipoSolicitudRespuesta(tiposolicitud_id);
         }
 
         [HttpPost]
-        [Route("api/agregarTipoSolicitud")]
+        [Route("api/ActualizarTipoSolicitud")]
+        public async Task<object> ActualizarSolicitud([FromBody] ActualizarSolicitudRequest request)
+        {
+            return await new ActualizarTipoSolicitud().ActualizarTipoSolicitudRespuesta(request);
+        }
+
+        [HttpPost]
+        [Route("api/AgregarTipoSolicitud")]
         public async Task<object> AgregarSolicitud([FromBody] AgregarSolicitudRequest request)
         {
             return await new AgregarTipoSolicitud().AgregarTipoSolicitudRespuesta(request);
+        }
+
+        [HttpPost]
+        [Route("api/AgregaActualizaTipoSolicitud")]
+        public async Task<object> AgregaActualizaSolicitud([FromBody] AgregarActualizarSolicitudRequest request)
+        {
+            return await new AgregarActualizarTipoSolicitud().AgregarActualizarTipoSolicitudRespuesta(request);
         }
     }
 }

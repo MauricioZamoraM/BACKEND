@@ -193,15 +193,130 @@ namespace API_CRUD.Data
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sqlcommand = "EXEC SP_AGREGAR_TIPO_SOLICITUD @tso_nombre, @tso_estado";
+                    string sqlcommand = "EXEC SP_AGREGA_TIPO_SOLICITUD @tso_nombre, @tso_estado";
 
                     using (SqlCommand command = new SqlCommand(sqlcommand, connection))
                     {
                         command.Parameters.AddWithValue("@tso_nombre", request.tso_nombre);
                         command.Parameters.AddWithValue("@tso_estado", Convert.ToInt32(request.tso_estado));
-                        command.ExecuteNonQuery();
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var respuesta = new ListaSolicitudesAgregar
+                                {
+                                    tso_nombre = (string)reader["tso_nombre"],
+                                    tso_estado = Convert.ToInt32(reader["tso_estado"])
+
+                                };
+
+                                results.solicitudes.Add(respuesta);
+                            }
+                        }
+
                         results.respuesta_tipo = "success";
-                        results.mensaje = "agregado";
+                        results.mensaje = "";
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                results.respuesta_tipo = "failed";
+                results.mensaje = "Error en la inserción: " + ex.Message;
+                throw;
+            }
+            return results;
+        }
+
+        public ActualizarSolicitudResponse ActualizarSolicitud(ActualizarSolicitudRequest request)
+        {
+            ActualizarSolicitudResponse results = new ActualizarSolicitudResponse();
+
+            string connectionString = Utils.Get_Connection_String(ActiveEnvironment());
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string sqlcommand = "EXEC SP_ACTUALIZA_TIPO_SOLICITUD @tso_id, @tso_nombre, @tso_estado";
+
+                    using (SqlCommand command = new SqlCommand(sqlcommand, connection))
+                    {
+                        command.Parameters.AddWithValue("@tso_id", request.tso_id);
+                        command.Parameters.AddWithValue("@tso_nombre", request.tso_nombre);
+                        command.Parameters.AddWithValue("@tso_estado", Convert.ToInt32(request.tso_estado));
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var respuesta = new ListaSolicitudesActualizar
+                                {
+                                    tso_id = (int)reader["tso_id"],
+                                    tso_nombre = (string)reader["tso_nombre"],
+                                    tso_estado = Convert.ToInt32(reader["tso_estado"])
+
+                                };
+
+                                results.solicitudes.Add(respuesta);
+                            }
+                        }
+
+                        results.respuesta_tipo = "success";
+                        results.mensaje = "";
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                results.respuesta_tipo = "failed";
+                results.mensaje = "Error en la inserción: " + ex.Message;
+                throw;
+            }
+            return results;
+        }
+
+        public AgregarActualizarSolicitudResponse AgregarActualizarSolicitud(AgregarActualizarSolicitudRequest request)
+        {
+            AgregarActualizarSolicitudResponse results = new AgregarActualizarSolicitudResponse();
+
+            string connectionString = Utils.Get_Connection_String(ActiveEnvironment());
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string sqlcommand = "EXEC SP_AGREGA_ACTUALIZA_TIPO_SOLICITUD @tso_id, @tso_nombre, @tso_estado";
+
+                    using (SqlCommand command = new SqlCommand(sqlcommand, connection))
+                    {
+                        command.Parameters.AddWithValue("@tso_id", request.tso_id);
+                        command.Parameters.AddWithValue("@tso_nombre", request.tso_nombre);
+                        command.Parameters.AddWithValue("@tso_estado", Convert.ToInt32(request.tso_estado));
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var respuesta = new ListaSolicitudesAgregarActualizar
+                                {
+                                    tso_id = (int)reader["tso_id"],
+                                    tso_nombre = (string)reader["tso_nombre"],
+                                    tso_estado = Convert.ToInt32(reader["tso_estado"])
+
+                                };
+
+                                results.solicitudes.Add(respuesta);
+                            }
+                        }
+
+                        results.respuesta_tipo = "success";
+                        results.mensaje = "";
                     }
                 }
 

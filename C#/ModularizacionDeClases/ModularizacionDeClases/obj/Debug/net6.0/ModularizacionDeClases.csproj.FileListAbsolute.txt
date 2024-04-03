@@ -1,0 +1,15 @@
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\bin\Debug\net6.0\ModularizacionDeClases.exe
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\bin\Debug\net6.0\ModularizacionDeClases.deps.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\bin\Debug\net6.0\ModularizacionDeClases.runtimeconfig.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\bin\Debug\net6.0\ModularizacionDeClases.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\bin\Debug\net6.0\ModularizacionDeClases.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.csproj.AssemblyReference.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.AssemblyInfoInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.AssemblyInfo.cs
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.csproj.CoreCompileInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\refint\ModularizacionDeClases.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ModularizacionDeClases.genruntimeconfig.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\ModularizacionDeClases\ModularizacionDeClases\obj\Debug\net6.0\ref\ModularizacionDeClases.dll

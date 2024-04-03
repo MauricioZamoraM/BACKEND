@@ -1,0 +1,30 @@
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\bin\Debug\net6.0\Herencia.exe
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\bin\Debug\net6.0\Herencia.deps.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\bin\Debug\net6.0\Herencia.runtimeconfig.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\bin\Debug\net6.0\Herencia.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\bin\Debug\net6.0\Herencia.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.csproj.AssemblyReference.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.AssemblyInfoInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.AssemblyInfo.cs
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.csproj.CoreCompileInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\refint\Herencia.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\Herencia.genruntimeconfig.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia\Herencia\Herencia\obj\Debug\net6.0\ref\Herencia.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\bin\Debug\net6.0\Herencia.exe
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\bin\Debug\net6.0\Herencia.deps.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\bin\Debug\net6.0\Herencia.runtimeconfig.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\bin\Debug\net6.0\Herencia.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\bin\Debug\net6.0\Herencia.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.csproj.AssemblyReference.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.AssemblyInfoInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.AssemblyInfo.cs
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.csproj.CoreCompileInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\refint\Herencia.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\Herencia.genruntimeconfig.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\Herencia, interfaces\Herencia\Herencia\obj\Debug\net6.0\ref\Herencia.dll

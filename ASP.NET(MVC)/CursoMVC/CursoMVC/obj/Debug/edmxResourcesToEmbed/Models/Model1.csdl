@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cursomvcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="cursomvcEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="cstate" EntityType="cursomvcModel.cstate" />
+    <EntitySet Name="usuarios" EntityType="cursomvcModel.usuarios" />
+    <AssociationSet Name="FK_Usuarios_Estados" Association="cursomvcModel.FK_Usuarios_Estados">
+      <End Role="cstate" EntitySet="cstate" />
+      <End Role="usuarios" EntitySet="usuarios" />
+    </AssociationSet>
+    <EntitySet Name="animal_class" EntityType="cursomvcModel.animal_class" />
+    <EntitySet Name="animals" EntityType="cursomvcModel.animals" />
+    <AssociationSet Name="FK_animal_animal_class" Association="cursomvcModel.FK_animal_animal_class">
+      <End Role="animal_class" EntitySet="animal_class" />
+      <End Role="animals" EntitySet="animals" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="cstate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="usuarios" Relationship="cursomvcModel.FK_Usuarios_Estados" FromRole="cstate" ToRole="usuarios" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="idState" Type="Int32" />
+    <NavigationProperty Name="cstate" Relationship="cursomvcModel.FK_Usuarios_Estados" FromRole="usuarios" ToRole="cstate" />
+  </EntityType>
+  <Association Name="FK_Usuarios_Estados">
+    <End Type="cursomvcModel.cstate" Role="cstate" Multiplicity="0..1" />
+    <End Type="cursomvcModel.usuarios" Role="usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cstate">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="usuarios">
+        <PropertyRef Name="idState" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="animal_class">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="animals" Relationship="cursomvcModel.FK_animal_animal_class" FromRole="animal_class" ToRole="animals" />
+  </EntityType>
+  <EntityType Name="animals">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idAnimalClass" Type="Int32" />
+    <NavigationProperty Name="animal_class" Relationship="cursomvcModel.FK_animal_animal_class" FromRole="animals" ToRole="animal_class" />
+  </EntityType>
+  <Association Name="FK_animal_animal_class">
+    <End Type="cursomvcModel.animal_class" Role="animal_class" Multiplicity="0..1" />
+    <End Type="cursomvcModel.animals" Role="animals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="animal_class">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="animals">
+        <PropertyRef Name="idAnimalClass" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,15 @@
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\bin\Debug\net6.0\MetodoConstructor.exe
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\bin\Debug\net6.0\MetodoConstructor.deps.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\bin\Debug\net6.0\MetodoConstructor.runtimeconfig.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\bin\Debug\net6.0\MetodoConstructor.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\bin\Debug\net6.0\MetodoConstructor.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.csproj.AssemblyReference.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.AssemblyInfoInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.AssemblyInfo.cs
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.csproj.CoreCompileInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\refint\MetodoConstructor.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\MetodoConstructor.genruntimeconfig.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\MetodoConstructor\MetodoConstructor\obj\Debug\net6.0\ref\MetodoConstructor.dll

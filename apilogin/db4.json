@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "TIP_CAMP_ID": 4,
+      "TIP_NOMBRE": "INT",
+      "TIP_CAMP_DESCRIPCION": "campo con valor entero",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "6",
+      "FECHA_REGISTRA": "2023-04-24T00:00:00"
+    },
+    {
+      "TIP_CAMP_ID": 6,
+      "TIP_NOMBRE": "STRING",
+      "TIP_CAMP_DESCRIPCION": "campo con valor texto",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "1",
+      "FECHA_REGISTRA": "2023-04-24T14:10:00"
+    },
+    {
+      "TIP_CAMP_ID": 7,
+      "TIP_NOMBRE": "LISTA DETALLE",
+      "TIP_CAMP_DESCRIPCION": "campo con datos de detalle",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "1",
+      "FECHA_REGISTRA": "2023-04-24T14:11:00"
+    },
+    {
+      "TIP_CAMP_ID": 9,
+      "TIP_NOMBRE": "BOOLEAN",
+      "TIP_CAMP_DESCRIPCION": "campo con valor boolean",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "1",
+      "FECHA_REGISTRA": "2023-05-02T15:09:28.28"
+    },
+    {
+      "TIP_CAMP_ID": 11,
+      "TIP_NOMBRE": "ARRAY JSON",
+      "TIP_CAMP_DESCRIPCION": "campo de array de json",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "1",
+      "FECHA_REGISTRA": "2023-05-04T09:35:31.84"
+    },
+    {
+      "TIP_CAMP_ID": 12,
+      "TIP_NOMBRE": "FECHA",
+      "TIP_CAMP_DESCRIPCION": "campo con fecha",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "1",
+      "FECHA_REGISTRA": "2023-05-09T11:36:31.88"
+    },
+    {
+      "TIP_CAMP_ID": 13,
+      "TIP_NOMBRE": "HORA",
+      "TIP_CAMP_DESCRIPCION": "campo con hora",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "1",
+      "FECHA_REGISTRA": "2023-05-09T11:36:31.88"
+    },
+    {
+      "TIP_CAMP_ID": 14,
+      "TIP_NOMBRE": "FECHA-HORA",
+      "TIP_CAMP_DESCRIPCION": "campo con fecha y hora",
+      "TIP_CAMP_ACTIVO": true,
+      "USUARIO_REGISTRA": "1",
+      "FECHA_REGISTRA": "2023-05-09T11:36:31.88"
+    }
+  ]
+}

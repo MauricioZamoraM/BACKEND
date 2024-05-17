@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 	"net/http"
+
 	"github.com/gorilla/websocket"
 )
 
-var upgrader = websocket.Upgrader{} 
+var upgrader = websocket.Upgrader{}
 
 func main() {
 	http.HandleFunc("/ws", func(w http.ResponseWriter, r *http.Request) {
@@ -26,7 +27,7 @@ func main() {
 			return
 		}
 
-		fmt.Println("Mensaje recibido: %s\n", mensaje)
+		fmt.Printf("Mensaje recibido: %s\n", mensaje)
 
 		error = conexion.WriteMessage(websocket.TextMessage, mensajeServidor)
 		if error != nil {

@@ -1,0 +1,50 @@
+﻿
+@model List<CursoMVC.Models.TableViewModels.UserTableViewModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Usuarios</h2>
+<div class="row">
+    <div class="col-md-12">
+        <input type="button"class="btn btn-primary" onclick="document.location.href='@Url.Content("~/User/Add")'" value="Nuevo"/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-bordered">
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+            </tr>
+             @foreach (var oElemento in Model)
+             { 
+             <tr>
+                 <td>@oElemento.Id</td>
+                 <td>@oElemento.Email</td>
+                 <td>
+                     <input type="button" value="Eliminar" class="btn btn-danger" onclick="jsDelete(@oElemento.Id)" />
+                     <input type="button" value="Editar" class="btn btn-default" onclick="document.location.href='@Url.Content("~/User/Edit/"+oElemento.Id)'" />
+                 </td>
+             </tr>
+             }
+        </table>
+
+    </div>
+</div>
+
+<script>
+    function jsDelete(id){
+
+        if (confirm("Estas seguro que desea eliminarlo")) {
+            url = "@Url.Content("~/User/Delete")"+"/"+id;
+        $.post(url, function (data) {
+                if (data == 1) {
+                    document.location.href = "@Url.Content("~/User/")"
+                } else {
+                    alert("Ocurrio un error inesperado")
+                }
+            })
+        }
+}
+</script>

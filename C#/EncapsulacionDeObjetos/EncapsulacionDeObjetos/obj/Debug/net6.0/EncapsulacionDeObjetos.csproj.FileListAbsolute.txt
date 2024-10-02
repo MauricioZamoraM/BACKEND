@@ -1,0 +1,15 @@
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\bin\Debug\net6.0\EncapsulacionDeObjetos.exe
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\bin\Debug\net6.0\EncapsulacionDeObjetos.deps.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\bin\Debug\net6.0\EncapsulacionDeObjetos.runtimeconfig.json
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\bin\Debug\net6.0\EncapsulacionDeObjetos.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\bin\Debug\net6.0\EncapsulacionDeObjetos.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.csproj.AssemblyReference.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.AssemblyInfoInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.AssemblyInfo.cs
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.csproj.CoreCompileInputs.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\refint\EncapsulacionDeObjetos.dll
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.pdb
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\EncapsulacionDeObjetos.genruntimeconfig.cache
+C:\Users\rmzamoram\Documents\Información Importante\PRACTICA\C#\EncapsulacionDeObjetos\EncapsulacionDeObjetos\obj\Debug\net6.0\ref\EncapsulacionDeObjetos.dll

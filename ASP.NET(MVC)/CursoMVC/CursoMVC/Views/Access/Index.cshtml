@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<br />
+<div class="row">
+    @*Se crea un formulario con el identificador "frm".*@
+    <form id="frm">
+        <div class="col-sm-6 col-sm-offset-3">
+            Usuario
+            <input type="text" name="user" />
+            Password
+            <input type="password" name="password" />
+            <input type="submit" class="btn btn-success" value="Entrar" />
+        </div>
+    </form>
+</div>
+
+
+@section scripts
+{
+    <script>
+        //Se agrega un manejador para el evento "document ready" utilizando $(document).ready(function () {...}).
+        //Esto asegura que el código se ejecutará cuando el documento HTML haya sido completamente cargado.
+        $(document).ready(function () {
+            //Se establece un manejador para el evento de envío del formulario "submit" utilizando $("#frm").submit(function (e) {...}).
+            $("#frm").submit(function (e) {
+                e.preventDefault();
+                // Se crea una variable "url" que contiene la URL de destino para la solicitud POST.
+                // Resuelve la ruta relativa "/Access/Enter" a una URL absoluta.
+                url = "@Url.Content("~/Access/Enter")" //Por medio de esta ruta se relaciona la vista con el controlador, cuando el formulario se envíe, la solicitud POST se enviará al método Enter del controlador AccessController
+                //Se crea una variable "parametros" que almacena los datos serializados del formulario mediante $(this).serialize(). Esto convierte los valores del formulario en una cadena de consulta (query string) que se enviará en la solicitud POST.
+                parametros = $(this).serialize();
+                //Se realiza una solicitud POST mediante $.post(url, parametros, function (data) {...}). Esto envía la solicitud a la URL especificada con los parámetros y proporciona una función de devolución de llamada para manejar la respuesta.
+                $.post(url, parametros, function (data) {
+                    //Dentro de la función de devolución de llamada, se verifica si la respuesta "data" es igual a "1". Si es así, se redirige al usuario a la página principal mediante document.location.href = "Url.Content";. De lo contrario, se muestra una alerta con el contenido de la respuesta.
+                    if (data == "1") {
+                        document.location.href = "@Url.Content("~/")";
+                    } else {
+                        alert(data);
+                    }
+                })
+            })
+        })
+    </script>
+}
